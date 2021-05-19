@@ -8,12 +8,14 @@ namespace PierresOrderApp.Models
     public string Description { get; set; }
     public int Id { get; }
     private static List<Vendor> _instances = new List<Vendor> { };
-    //we need a list of orders -- List<Order> nameOfIt = new List<Order> { };
+    public static List<Order> orders = new List<Order> { };//probably not
 
     public Vendor(string name, string description)
     {
       Name = name;
       Description = description;
+      //List <Order> = orders;//nope
+      //orders.AddOrder(orders);//probably not either
       _instances.Add(this);
       Id = _instances.Count;
     }
@@ -31,6 +33,11 @@ namespace PierresOrderApp.Models
     public static Vendor Find(int searchId)
     {
       return _instances[searchId - 1];
+    }
+
+    public void AddOrder(Order order)
+    {
+      Orders.Add(order);
     }
   }
 }
