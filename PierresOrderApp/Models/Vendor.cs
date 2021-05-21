@@ -8,14 +8,13 @@ namespace PierresOrderApp.Models
     public string Description { get; set; }
     public int Id { get; }
     private static List<Vendor> _instances = new List<Vendor> { };
-    public static List<Order> orders = new List<Order> { };//probably not
+    public List<Order> Orders { get; set; }
 
     public Vendor(string name, string description)
     {
       Name = name;
       Description = description;
-      //List <Order> = orders;//nope
-      //orders.AddOrder(orders);//probably not either
+      Orders = new List<Order> { };
       _instances.Add(this);
       Id = _instances.Count;
     }
