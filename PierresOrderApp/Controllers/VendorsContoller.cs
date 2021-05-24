@@ -39,7 +39,7 @@ namespace PierresOrderApp.Controllers
       return View(model);
     }
 
-    [HttpPost("/vendors{vendorId}/orders/new")]
+    [HttpPost("/vendors/{vendorId}/orders/new")]
     public ActionResult Create(int vendorId, string orderTitle, string orderDescription, int orderPrice, string orderDate)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
