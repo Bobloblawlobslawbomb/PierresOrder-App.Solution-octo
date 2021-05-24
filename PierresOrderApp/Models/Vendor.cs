@@ -7,8 +7,9 @@ namespace PierresOrderApp.Models
     public string Name { get; set; }
     public string Description { get; set; }
     public int Id { get; }
-    private static List<Vendor> _instances = new List<Vendor> { };
     public List<Order> Orders { get; set; }
+    private static List<Vendor> _instances = new List<Vendor> { };
+
 
     public Vendor(string name, string description)
     {

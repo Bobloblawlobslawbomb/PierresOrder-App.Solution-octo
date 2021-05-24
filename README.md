@@ -13,7 +13,7 @@
 
 ---
 ## Description 
-The program will present the user with a set of currency choices, under the heading: 'Pick a currency to convert to:' once the user makes that choice they are presented with a text field to enter a dollar amount. The user is expected to enter the amount of money they would like to convert in dollars (ex. 100 = 100 USD). Then the user is presented with their value of dollars converted into the latest values of the equvivalent currency. 
+The program will present the user with a splash screen whic allows the user to 'view vendors' or 'add a new vendor'. If view vendors is selected without first entering a vendor the user will be presented with a screen stating "No vendors have been added yet!" and be given the ability to navigate back to the begining splash screen. If the user decides to 'add a new vendor' they are then brought to a page which has a field for a vendor name, a vendor description, a button to submit both fields and two more links which are labeled 'back home' and 'back to vendors.' which do both stated actions. Once a vendor is 'added' the user may click on the name of the vendor and is given a new set of options after doing so. The last link option is to return to the main splash page, the penultimate option merely navigates back to the last page (the list of vendors). There is also a link to 'add a new order', this will bring the user to a page where they may enter information that represents "order title", "order description", "order price", and "order date" and a button to submit. Once submitted the user is shown the orders details and is given the options to add another order and to view all vendors. 
 
 ## Installation Requirements/Setup
 
@@ -40,7 +40,7 @@ The program will present the user with a set of currency choices, under the head
 
 ## Known Bugs
 
-* _none. That I know of..._
+* _Views/Orders/Show.cshtml not working/showing_
 ---
 
 ## License [GPL] (https://choosealicense.com/licenses/gpl-3.0/)
