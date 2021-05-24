@@ -54,7 +54,6 @@ namespace PierresOrderApp.Tests
     [TestMethod]
     public void AddOrder_AssociatesOrderWithVendor_VendorList()
     {
-      //Arrange
       string newOrderTitle = "Buy Meat";
       string newOrderDescription = "Buy All the Meat";
       int newOrderPrice = 20;
@@ -66,10 +65,8 @@ namespace PierresOrderApp.Tests
       Vendor newVendor = new Vendor(name02, desc02);
       newVendor.AddOrder(newOrder);
 
-      //Act
       List<Order> result = newVendor.Orders;
 
-      //Assert
       CollectionAssert.AreEqual(newList, result);
     }
   }
