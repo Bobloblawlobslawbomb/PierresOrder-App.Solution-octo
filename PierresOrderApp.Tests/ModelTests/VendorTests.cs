@@ -22,29 +22,29 @@ namespace PierresOrderApp.Tests
     [TestMethod]
     public void GetName_ReturnsName_String()
     {
-      string name01 = "Pac Coast";
-      string desc01 = "Fruit";
-      Vendor newVendor1 = new Vendor(name01, desc01);
-      string result = newVendor1.Name;
-      Assert.AreEqual(name01, result);
+      string name = "Pac Coast";
+      string desc = "Fruit";
+      Vendor newVendor = new Vendor(name, desc);
+      string result = newVendor.Name;
+      Assert.AreEqual(name, result);
     }
 
     [TestMethod]
     public void GetDescription_ReturnsDescription_String()
     {
-      string name01 = "Pac Coast";
-      string desc01 = "Fruit";
-      Vendor newVendor1 = new Vendor(name01, desc01);
-      string result = newVendor1.Description;
-      Assert.AreEqual(desc01, result);
+      string name = "Pac Coast";
+      string desc = "Fruit";
+      Vendor newVendor = new Vendor(name, desc);
+      string result = newVendor.Description;
+      Assert.AreEqual(desc, result);
     }
 
     [TestMethod]
     public void GetId_ReturnsVendorId_Int()
     {
-      string name01 = "Pac Coast";
-      string desc01 = "Fruit";
-      Vendor newVendor = new Vendor(name01, desc01);
+      string name = "Pac Coast";
+      string desc = "Fruit";
+      Vendor newVendor = new Vendor(name, desc);
 
       int result = newVendor.Id;
 
@@ -92,9 +92,9 @@ namespace PierresOrderApp.Tests
       string newOrderDate = "Today";
       Order newOrder = new Order(newOrderTitle, newOrderDescription, newOrderPrice, newOrderDate);
       List<Order> newList = new List<Order> { newOrder };
-      string name02 = "Charlie's Produce";
-      string desc02 = "Vegetable";
-      Vendor newVendor = new Vendor(name02, desc02);
+      string name = "Charlie's Produce";
+      string desc = "Vegetable";
+      Vendor newVendor = new Vendor(name, desc);
       newVendor.AddOrder(newOrder);
 
       List<Order> result = newVendor.Orders;

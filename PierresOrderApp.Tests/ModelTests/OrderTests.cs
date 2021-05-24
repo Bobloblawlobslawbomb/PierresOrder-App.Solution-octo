@@ -24,59 +24,59 @@ namespace PierresOrderApp.Tests
     [TestMethod]
     public void GetTitle_ReturnsTitle_String()
     {
-      string name01 = "Pac Coast";
-      string desc01 = "Fruit";
-      int price01 = 10;
-      string date01 = "Today";
-      Order newOrder1 = new Order(name01, desc01, price01, date01);
-      string result = newOrder1.Title;
-      Assert.AreEqual(name01, result);
+      string name = "Pac Coast";
+      string desc = "Fruit";
+      int price = 10;
+      string date = "Today";
+      Order newOrder = new Order(name, desc, price, date);
+      string result = newOrder.Title;
+      Assert.AreEqual(name, result);
     }
 
     [TestMethod]
     public void GetDescription_ReturnsDescription_String()
     {
-      string name01 = "Pac Coast";
-      string desc01 = "Fruit";
-      int price01 = 10;
-      string date01 = "Today";
-      Order newOrder1 = new Order(name01, desc01, price01, date01);
-      string result = newOrder1.Description;
-      Assert.AreEqual(desc01, result);
+      string name = "Pac Coast";
+      string desc = "Fruit";
+      int price = 10;
+      string date = "Today";
+      Order newOrder = new Order(name, desc, price, date);
+      string result = newOrder.Description;
+      Assert.AreEqual(desc, result);
     }
 
     [TestMethod]
     public void GetPrice_ReturnsPrice_Int()
     {
-      string name01 = "Pac Coast";
-      string desc01 = "Fruit";
-      int price01 = 10;
-      string date01 = "Today";
-      Order newOrder1 = new Order(name01, desc01, price01, date01);
-      int result = newOrder1.Price;
-      Assert.AreEqual(price01, result);
+      string name = "Pac Coast";
+      string desc = "Fruit";
+      int price = 10;
+      string date = "Today";
+      Order newOrder = new Order(name, desc, price, date);
+      int result = newOrder.Price;
+      Assert.AreEqual(price, result);
     }
 
     [TestMethod]
     public void GetDate_ReturnsDate_String()
     {
-      string name01 = "Pac Coast";
-      string desc01 = "Fruit";
-      int price01 = 10;
-      string date01 = "Today";
-      Order newOrder1 = new Order(name01, desc01, price01, date01);
-      string result = newOrder1.Date;
-      Assert.AreEqual(date01, result);
+      string name = "Pac Coast";
+      string desc = "Fruit";
+      int price = 10;
+      string date = "Today";
+      Order newOrder = new Order(name, desc, price, date);
+      string result = newOrder.Date;
+      Assert.AreEqual(date, result);
     }
 
     [TestMethod]
     public void GetId_ReturnsCategoryId_Int()
     {
-      string name02 = "Charlie's Produce";
-      string desc02 = "Vegetable";
-      int price02 = 20;
-      string date02 = "Yesterday";
-      Order newOrder = new Order(name02, desc02, price02, date02);
+      string name = "Charlie's Produce";
+      string desc = "Vegetable";
+      int price = 20;
+      string date = "Yesterday";
+      Order newOrder = new Order(name, desc, price, date);
 
       int result = newOrder.Id;
 
