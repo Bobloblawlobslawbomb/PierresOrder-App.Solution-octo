@@ -70,6 +70,20 @@ namespace PierresOrderApp.Tests
     }
 
     [TestMethod]
+    public void GetId_ReturnsCategoryId_Int()
+    {
+      string name02 = "Charlie's Produce";
+      string desc02 = "Vegetable";
+      int price02 = 20;
+      string date02 = "Yesterday";
+      Order newOrder = new Order(name02, desc02, price02, date02);
+
+      int result = newOrder.Id;
+
+      Assert.AreEqual(1, result);
+    }
+
+    [TestMethod]
     public void GetAll_ReturnsEmptyList_OrderList()
     {
       List<Order> newList = new List<Order> { };
