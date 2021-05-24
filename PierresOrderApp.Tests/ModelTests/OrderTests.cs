@@ -22,6 +22,54 @@ namespace PierresOrderApp.Tests
     }
 
     [TestMethod]
+    public void GetTitle_ReturnsTitle_String()
+    {
+      string name01 = "Pac Coast";
+      string desc01 = "Fruit";
+      int price01 = 10;
+      string date01 = "Today";
+      Order newOrder1 = new Order(name01, desc01, price01, date01);
+      string result = newOrder1.Title;
+      Assert.AreEqual(name01, result);
+    }
+
+    [TestMethod]
+    public void GetDescription_ReturnsDescription_String()
+    {
+      string name01 = "Pac Coast";
+      string desc01 = "Fruit";
+      int price01 = 10;
+      string date01 = "Today";
+      Order newOrder1 = new Order(name01, desc01, price01, date01);
+      string result = newOrder1.Description;
+      Assert.AreEqual(desc01, result);
+    }
+
+    [TestMethod]
+    public void GetPrice_ReturnsPrice_Int()
+    {
+      string name01 = "Pac Coast";
+      string desc01 = "Fruit";
+      int price01 = 10;
+      string date01 = "Today";
+      Order newOrder1 = new Order(name01, desc01, price01, date01);
+      int result = newOrder1.Price;
+      Assert.AreEqual(price01, result);
+    }
+
+    [TestMethod]
+    public void GetDate_ReturnsDate_String()
+    {
+      string name01 = "Pac Coast";
+      string desc01 = "Fruit";
+      int price01 = 10;
+      string date01 = "Today";
+      Order newOrder1 = new Order(name01, desc01, price01, date01);
+      string result = newOrder1.Date;
+      Assert.AreEqual(date01, result);
+    }
+
+    [TestMethod]
     public void GetAll_ReturnsEmptyList_OrderList()
     {
       List<Order> newList = new List<Order> { };
