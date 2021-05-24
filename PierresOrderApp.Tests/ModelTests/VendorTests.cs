@@ -40,6 +40,18 @@ namespace PierresOrderApp.Tests
     }
 
     [TestMethod]
+    public void GetId_ReturnsVendorId_Int()
+    {
+      string name01 = "Pac Coast";
+      string desc01 = "Fruit";
+      Vendor newVendor = new Vendor(name01, desc01);
+
+      int result = newVendor.Id;
+
+      Assert.AreEqual(1, result);
+    }
+
+    [TestMethod]
     public void GetAll_ReturnsListOfAllVendorObjects_List()
     {
       string name01 = "Pac Coast";
