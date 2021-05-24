@@ -40,7 +40,7 @@ The program will present the user with a splash screen which allows the user to 
 
 ## Known Bugs
 
-* _Views/Orders/Show.cshtml not working/showing_
+* _none. That I know of..._
 ---
 
 ## License [GPL] (https://choosealicense.com/licenses/gpl-3.0/)
