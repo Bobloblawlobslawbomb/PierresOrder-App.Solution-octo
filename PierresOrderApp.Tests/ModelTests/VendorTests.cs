@@ -20,6 +20,26 @@ namespace PierresOrderApp.Tests
     }
 
     [TestMethod]
+    public void GetName_ReturnsName_String()
+    {
+      string name01 = "Pac Coast";
+      string desc01 = "Fruit";
+      Vendor newVendor1 = new Vendor(name01, desc01);
+      string result = newVendor1.Name;
+      Assert.AreEqual(name01, result);
+    }
+
+    [TestMethod]
+    public void GetDescription_ReturnsDescription_String()
+    {
+      string name01 = "Pac Coast";
+      string desc01 = "Fruit";
+      Vendor newVendor1 = new Vendor(name01, desc01);
+      string result = newVendor1.Description;
+      Assert.AreEqual(desc01, result);
+    }
+
+    [TestMethod]
     public void GetAll_ReturnsListOfAllVendorObjects_List()
     {
       string name01 = "Pac Coast";
