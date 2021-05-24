@@ -35,5 +35,20 @@ namespace PierresOrderApp.Tests
 
       CollectionAssert.AreEqual(newList, result);
     }
+
+    [TestMethod]
+    public void Find_ReturnsCorrectVendor_Vendor()
+    {
+      string name01 = "Pac Coast";
+      string name02 = "Charlie's Produce";
+      string desc01 = "Fruit";
+      string desc02 = "Vegetable";
+      Vendor newVendor1 = new Vendor(name01, desc01);
+      Vendor newVendor2 = new Vendor(name02, desc02);
+
+      Vendor result = Vendor.Find(2);
+
+      Assert.AreEqual(newVendor2, result);
+    }
   }
 }
